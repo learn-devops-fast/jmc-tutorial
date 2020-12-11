@@ -33,7 +33,7 @@ public class Logger {
 		// Write the text to a database or similar...
 		try {
 			// Simulate that this takes a little while.
-			Thread.sleep(200);
+			Thread.sleep(0);
 		} catch (InterruptedException e) {
 			// Don't care.
 		}

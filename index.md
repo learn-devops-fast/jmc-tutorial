@@ -2,6 +2,13 @@
 layout: default
 title: Java Mission Control
 ---
+---
+layout: default
+author: Cameron McKenzie
+title: Java Mission Control Tutorial
+blurb: Learn how to profile your JVM and fix Java performance issues with Java Mission Control and Flight Recorder.
+---
+
 
 # JDK Mission Control Tutorial
 

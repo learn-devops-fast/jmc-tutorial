@@ -17,5 +17,5 @@
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="se.hirt.jmc.tutorial.donothing.DoNothing"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="01_DoNothing"/>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.net.preferIPv4Stack=true -XX:+FlightRecorder -XX:FlightRecorderOptions=stackdepth=128 -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:StartFlightRecording=delay=20s,duration=120s,name=DoNothing,filename=${workspace_loc}/../autorecordings/donothing.jfr -Xlog:jfr=info"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.net.preferIPv4Stack=true -XX:+FlightRecorder -XX:FlightRecorderOptions=stackdepth=128 -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:StartFlightRecording=delay=20s,duration=120s,name=DoNothing,filename=${workspace_loc}\autorecordings\donothing.jfr -Xlog:jfr=info"/>
 </launchConfiguration>
