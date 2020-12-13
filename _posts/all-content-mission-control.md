@@ -1,7 +1,206 @@
 
-<img alt="" class="img-fluid" src="/assets/.png"/>
 
 
+
+
+
+
+
+
+
+
+
+<a id="markdown-exercise-2a--starting-a-jfr-recording" name="exercise-2a--starting-a-jfr-recording"></a>
+### Exercise 2a – Starting a JFR Recording
+
+There are various ways to start a flight recording. For this exercise, we will use the
+Flight Recording Wizard built into JDK Mission Control.
+
+First switch to the Java perspective. Note that there is an empty project named
+Recordings. Next start the DoNothing program by right clicking on the
+**DoNothing.launch** file in the **Launchers** folder of the 01_DoNothing project,
+as show below.
+
+![eclipse run do nothing program][eclipse-run-do-nothing-program]
+
+Note: _There are “Auto Record” versions of most launchers, which will launch the_
+application and automatically create a recording in the **_autorecordings_** folder in
+the tutorial root. This is since, in certain environments (slow machines running a
+virtualized Windows for example), the highly loaded JVM that JMC is trying to
+communicate with will take so long to getting around to communicate with JMC that
+it simply is no fun to wait. _If that is the case, simply run the “Auto” launchers._ Or,
+
+you know, if _you’re lazy. I will not judge._ Just try doing this first exercise without
+Auto, as it is about doing recordings from JMC.
+
+Switch to the Mission Control perspective and select the newly discovered JVM
+running the DoNothing class in the JVM Browser. Select Start Flight Recording...
+from the context menu. The Flight Recording Wizard will open. Click Browse to find
+a suitable location (e.g. the Recordings project) and filename for storing the
+recording. Don’t forget to name the recording so that it can be recognized by others
+connecting to the JVM, and so that the purpose of the recording can be better
+remembered. The name will be used when listing the ongoing recordings for a JVM,
+and will also be recorded into the recording itself.
+
+Next select the template you want to use when recording. The template describes the
+configuration to use for the different event types. Select the Profiling – on Server
+template, and hit Finish to start the recording.
+
+![eclipse jmc start flight recording][eclipse-jmc-start-flight-recording]
+
+The progress of the recording can be seen in the JVM Browser, when the Flight
+Recorder node is expanded. It can also be seen in the status bar.
+
+![eclipse jmc jvm browser flight recorder node expanded][eclipse-jmc-jvm-browser-flight-recorder-node-expanded]
+
+Use the minute to contemplate intriguing suggestions for how to improve Mission
+Control (don’t forget to e-mail them to marcus.hirt@oracle.com), get a coffee, or read
+ahead in the tutorial.
+
+Once the recording is done, it will be downloaded to your Mission Control client, and
+opened. Switch to the JDK Mission Control perspective.
+
+You should be looking at the automated analysis of the recording.
+
+![eclipse jmc automated recording analysis do nothing][eclipse-jmc-automated-recording-analysis-do-nothing]
+
+This exercise is just to familiarize you with one of the ways to create a flight
+recording. This will be a rather boring recording, in terms of results from the
+automated analysis, so don’t mind the results of this analysis.
+
+Since the recording was done on a process not doing any actual work, the auto-
+analysis didn’t find anything other than that I should probably run less stuff on my
+laptop:
+
+1. I am starting to run out of physical memory. I am guessing MS Word ate a
+    good portion of it. ;)
+2. I have a lot of other processes running aside from the JVM. Since this is my
+    laptop, and not a dedicated server, I am not surprised.
+
+The Outline view shows the various pages in the JDK Flight Recorder user interface.
+Select Java Application.
+
+![eclipse jmc application outline view do nothing][eclipse-jmc-application-outline-view-do-nothing]
+
+
+Here we get an overview of commonly interesting properties of the recording. This
+process didn’t do much, but we can see that what little it did was spent transferring
+data.
+
+This exercise was mostly to describe how to make a recording, and basic navigation
+in the user interface. Once you are done with the recording, remember to shut down
+the DoNothing application.
+
+- Either go to the Java perspective and hit enter in the Console view,
+
+![eclipse java perspective console view][eclipse-java-perspective-console-view]
+
+- ... or go the Debug perspective, find the LoadAndDeadlock process and click the Terminate button
+
+![eclipse debug perspective terminate][eclipse-debug-perspective-terminate]
+
+Note: Also, remember to close the recording editor window when you are done with a
+recording. Recordings contain a lot of information and can consequently use a lot of
+memory.
+
+![eclipse close recording window][eclipse-close-recording-window]
+
+<a id="markdown-exercise-2b--hot-methods" name="exercise-2b--hot-methods"></a>
+### Exercise 2b – Hot Methods
+
+One class of profiling problems deals with finding out where the application is
+spending the most time executing. Such a “hot spot” is usually a very good place to
+start optimizing your application, as any effort bringing down the computational
+overhead in such a method will affect the overall execution of the application a lot.
+
+Like any good cooking show, we’ve provided you with pre-recorded recordings to
+save you from having to wait another few minutes for the recording to finish.
+
+Open the 02_JFR_HotMethods/hotmethods_before.jfr recording.
+
+Note: Switch to the Java perspective and open (double click) the recording in the
+02_JFR_HotMethods project named hotmethods_before.jfr.
+
+![eclipse jmc automated recording analysis hotmethods][eclipse-jmc-automated-recording-analysis-hotmethods]
+
+Switch back to the JDK Mission Control perspective once the recording is open. Even
+though you will be able to see the automated analysis page directly in the Java
+Perspective, the JDK Mission Control places the support views needed to effectively
+navigate and analyze flight recordings in the right places. Therefore, always
+remember to switch to the JDK Mission Control perspective when analyzing
+recordings.
+
+The automated analysis indicates that there is potential value in optimizing certain
+methods.
+
+Since there is apparently interesting information in the Java Application tab, click on
+the Java Application header in the Automated Analysis Results page.
+
+![eclipse jmc application outline view hotmethods][eclipse-jmc-application-outline-view-hotmethods]
+
+Next click on the Profiling lane. The stack trace view will show the aggregated stack
+traces of any selection in the editor. It will now show you the stack traces for the
+profiling samples.
+
+In the recording, one of these methods has a lot more samples than the others. This
+means that the JVM has spent more time executing that method relative to the other
+methods. Which method is the hottest one? From where do the calls to that method
+originate?
+
+Which method do you think would be the best one to optimize to improve the
+performance of this application?
+
+Note: Often the hotspot is in a method beyond your control. Look for a predecessor
+that you can affect.
+
+There is another page, Method Profiling, that makes it easy to break down the method
+profiling samples per package and class of where the sample was captured.
+
+![eclipse jmc method profiling hotmethods][eclipse-jmc-method-profiling-hotmethods]
+
+In the stack trace view, the most commonly traveled path is shown by default,
+effectively giving you the most common stack trace directly. Wherever the path
+branches, there is a branch icon ( , ). You can use the right and left arrow keys to
+select between the different branches (Frame Groups), or use the toolbar buttons
+( , ):
+
+![eclipse jmc stacktrace next frame group][eclipse-jmc-stacktrace-next-frame-group]
+
+If you would rather use a tree representation, and see the aggregation done from the
+thread roots, this can also be done:
+
+![eclipse jmc stacktrace tree][eclipse-jmc-stacktrace-tree]
+
+Note that there are no line numbers in the last screenshot. You can select at what
+granularity to distinguish the frames from each other, in effect grouping frames
+together. This is controlled from the context menu:
+
+![eclipse jmc stacktrace line numbers][eclipse-jmc-stacktrace-line-numbers]
+
+Using Method will often be a helpful tool to declutter the view.
+
+Deep Dive Exercises:
+
+1. Can you, by changing one line of code, make the program much more
+    effective (more than a factor 10)?
+
+```
+Note: If you get stuck, help can be found in the Readme.txt file in the projects.
+Note: To save resources, remember to close the flight recordings you no
+longer need.
+```
+
+2. Is it possible to do another recording to figure out how much faster the
+    program became after the change?
+
+```
+Note: The application generates custom events for each unit of “work” do ne.
+This makes it easy to compare the time it takes to complete a unit of work
+before and after the code change. Would it be possible to decide how faster
+the program became without these custom events?
+```
+The moral of the exercise is that no matter how fast the JVM is, it can never save you
+from poor choices in algorithms and data structures.
 
 
 <a id="markdown-exercise-3--latencies" name="exercise-3--latencies"></a>

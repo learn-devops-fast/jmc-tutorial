@@ -6,9 +6,9 @@ blurb: Wondering what Java Mission Control is? Here's a quick explaination for y
 ---
 
 ## What is Java Mission Control?
-
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E3gxhuATmHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</div>
 JDK Mission Control is a suite of tools for monitoring, profiling and diagnosing
 applications running in production on the HotSpot JVM.
 

@@ -6,9 +6,9 @@ blurb: xGet started with the Java flight recorder.
 ---
 
 ## JDK Mission Control Tutorial
-
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E3gxhuATmHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</div>
 This tutorial provides plenty of examples and material to help you learn JDK Mission Control (7+).
 
 ## Preparations

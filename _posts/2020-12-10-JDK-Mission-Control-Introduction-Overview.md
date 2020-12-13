@@ -6,9 +6,9 @@ blurb: Here's how to get started with Java Mission Control and the Flight Record
 ---
 
 ### Setting up Eclipse
-
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AHT4ZvOe6a4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</div>
 ## Installing Mission Control
 
 To do the exercises in this tutorial, you must first install Eclipse and Mission Control.

@@ -4,9 +4,9 @@ author: Cameron McKenzie
 title: Integration of Java Mission Control and Eclipse
 blurb: Here is how to integrate Java Mission Control with Eclipse so you can profile your JVM and troubleshoot performance problems.
 ---
-
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E3gxhuATmHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</div>
 <a id="markdown-exercise-1b--starting-jmc-in-eclipse" name="exercise-1b--starting-jmc-in-eclipse"></a>
 
 ## Introduction to Java Mission Control in Eclipse
