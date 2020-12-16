@@ -9,7 +9,7 @@ blurb: Here's how to troubleshoot low latency Java applications with JDK Mission
 
 
 <a id="markdown-exercise-3--latencies" name="exercise-3--latencies"></a>
-### Low Latency Java Applications Synchronization Costs
+# Low Latency Java Applications Synchronization Costs
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1LUae4wSZyM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

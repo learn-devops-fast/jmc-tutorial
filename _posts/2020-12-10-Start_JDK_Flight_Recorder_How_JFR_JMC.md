@@ -8,7 +8,7 @@ blurb: Here's how you start Java Flight Recorder and generate a file that profil
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SzRq99Qy96Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <a id="markdown-exercise-2a--starting-a-jfr-recording" name="exercise-2a--starting-a-jfr-recording"></a>
-### Starting a JFR Recording
+# Starting a JFR Recording
 
 There are various ways to start a flight recording. For this exercise, we will use the
 Flight Recording Wizard built into JDK Mission Control.
@@ -31,6 +31,9 @@ it simply is no fun to wait. _If that is the case, simply run the “Auto” lau
 
 you know, if _you’re lazy. I will not judge._ Just try doing this first exercise without
 Auto, as it is about doing recordings from JMC.
+
+## Java Mission Control Perspective
+
 
 Switch to the Mission Control perspective and select the newly discovered JVM
 running the DoNothing class in the JVM Browser. Select Start Flight Recording...
@@ -63,6 +66,9 @@ You should be looking at the automated analysis of the recording.
 
 
 <img alt="eclipse jmc automated recording analysis do nothing" class="img-fluid" src="/assets/eclipse-jmc-automated-recording-analysis-do-nothing.png"/>
+
+## Start Java Flight Recorder 
+
 This exercise is just to familiarize you with one of the ways to create a flight
 recording. This will be a rather boring recording, in terms of results from the
 automated analysis, so don’t mind the results of this analysis.
@@ -86,7 +92,7 @@ Here we get an overview of commonly interesting properties of the recording. Thi
 process didn’t do much, but we can see that what little it did was spent transferring
 data.
 
-This exercise was mostly to describe how to make a recording, and basic navigation
+This exercise was mostly to describe how to make a Java Flight Recorder recording, and basic navigation
 in the user interface. Once you are done with the recording, remember to shut down
 the DoNothing application.
 

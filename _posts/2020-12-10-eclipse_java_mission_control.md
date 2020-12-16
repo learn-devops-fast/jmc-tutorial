@@ -5,12 +5,15 @@ title: Java Mission Control and Eclipse
 blurb: Here's how to integrate Java Mission Control with Eclipse so you can profile your JVM and troubleshoot performance problems.
 ---
 
-### Setting up Eclipse
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E3gxhuATmHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+# Configure Eclipse with Mission Control
+
 The tutorial will be easier to run if you have an Eclipse installed. You will need an Eclipse Oxygen 4.8.0 or later. You will also need to add some VM arguments.
+
+## Mission Control JVM Arguments
 
 For example:
 
@@ -28,6 +31,8 @@ For example:
 ```
 
 Depending on your platform you will also need to add one final export.
+
+### Java Mission Control on Windows
 
 If running on Windows, also add:
 
@@ -57,7 +62,7 @@ You may also want to ensure that your newly setup JDK is being used for running 
 ...
 ```
 
-#### Adding the Eclipse plug-ins
+### Add the Mission Cnotrol Eclipse plug-ins
 
 Next you will want to add the JMC plug-ins. Once JMC is released, this will be as simple as going to the Eclipse market place. For now, you will need to build them yourself. Install mercurial (if you don't already have it) and run the following command in the folder you wish to clone the JMC source:
 
@@ -67,12 +72,12 @@ hg clone http://hg.openjdk.java.net/jmc/jmc/
 
 Follow the instructions in the README.md found in the root of the JMC repository on how to create and access the update sites for Eclipse.
 
-#### Importing the projects
+#### Java Mission Control tutorial projects
 To import the projects into Eclipse, create a new Workspace and simply import all the projects available in the projects folder.
 
-## Running the Tutorial
+## Running the JMC JFR Tutorial
 There is a PDF in the root of this project explaining in detail how to run the JMC labs. If running the labs from within Eclipse, first ensure that you have set up an Eclipse properly, added the plug-in version of JMC, and imported the projects.
 
-## About
-This tutorial is for learning how to use JDK Mission Contol. It is provided under GPLv3 as is. If you find a problem, please open a ticket or feel free to provide a pull request.
+
+This Java Mission Control and Flight Recorder tutorial is for learning how to use JDK Mission Contol. It is provided under GPLv3 as is. If you find a problem, please open a ticket or feel free to provide a pull request.
 

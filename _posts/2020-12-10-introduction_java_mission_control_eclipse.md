@@ -1,15 +1,15 @@
 ---
 layout: default
 author: Cameron McKenzie
-title: xIntegration of Java Mission Control and Eclipse
-blurb: xHere is how to integrate Java Mission Control with Eclipse so you can profile your JVM and troubleshoot performance problems.
+title: Java Mission Control Introduction and Overview with Eclipse
+blurb: Here's a quick introduction to Java Mission Control and the JVM Flight Recorder tool.
 ---
-<a id="markdown-exercise-1b--starting-jmc-in-eclipse" name="exercise-1b--starting-jmc-in-eclipse"></a>
 <div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SzRq99Qy96Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E3gxhuATmHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+<a id="markdown-exercise-1b--starting-jmc-in-eclipse" name="exercise-1b--starting-jmc-in-eclipse"></a>
 
-## Introduction to Java Mission Control in Eclipse
+# Introduction to Java Mission Control in Eclipse
 
 First make sure that you followed the instructions in the README.md file in the root
 of the GitHub repository to the letter, and that the JMC plug-ins are installed Next
@@ -46,6 +46,10 @@ should browse to the <JDK>/Contents/Home folder.
 ```
 Don’t forget to click Apply and Close when done.
 ```
+
+## Java Mission Control and Eclipse
+
+
 Next we will have to import the projects with all the examples into the workspace.
 
 1. Select File | Import... from the menu.
@@ -64,6 +68,8 @@ Next we will have to import the projects with all the examples into the workspac
 You should now see something similar to the following:
 
 <img src="/assets/eclipse-workspace-projects-loaded.png" class="img-fluid" alt="Java JMC JFR projects loaded"/>
+
+### Eclipse Java Mission Control Perspective
 
 To the left the projects for the different exercises can be seen. In Eclipse a
 configuration of views is called a perspective. There is a special perspective
@@ -84,6 +90,8 @@ stand-alone version of JDK Mission Control.
 
 
 <img src="/assets/eclipse-jmc-perspective-jvm-browser.png" class="img-fluid" alt="Eclipse Mission Control JVM browser"/>
+
+## Start JVM Flight Recorder in Eclipse
 
 Launching the tools work exactly the same as in the stand-alone version. Either use
 the context menu of the JVM that you wish to launch the tool on, or click the Mission

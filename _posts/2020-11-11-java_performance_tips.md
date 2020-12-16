@@ -5,11 +5,11 @@ title: Java Performance Tips
 blurb: Here's a Devoxx video from Jack Shirazi about Java performance tips.
 ---
 
-### Setting up Eclipse
+
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OYpTn0nWKR4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-## Java performance tips
+# Java performance tips
 
 we're again inflated do it make sure so
 let me let me just get started with a

@@ -1,4 +1,15 @@
+---
+layout: default
+author: Cameron McKenzie
+title: A list of JVM monitoring tools
+blurb: Here's a list of monitoring tools
+---
 
+# JVM Monitoring Tools List
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E3gxhuATmHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <div id="JSTGD249"><a id="BABFCEEB" name="BABFCEEB">
 <div class="smallpagetitle"><h1>Monitoring Tools</h1></div>

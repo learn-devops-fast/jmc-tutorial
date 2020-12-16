@@ -5,7 +5,7 @@ title: Java Mission Control Tutorial
 blurb: Learn how to profile your JVM and fix Java performance issues with Java Mission Control and Flight Recorder.
 ---
 
-## JDK Mission Control Tutorial
+# JDK Mission Control Tutorial
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E3gxhuATmHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

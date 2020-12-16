@@ -1,17 +1,36 @@
 ---
 layout: default
 author: Cameron McKenzie
-title: JDK Mission Control Introduction and Overview
-blurb: Here's how to get started with Java Mission Control and the Flight Recorder. It's a quick introduction to JMC and JFR, but it will get you started with performance profiling and JDK troubleshooting.
+title: Download and install Java Mission Control and Flight Recorder.
+blurb: Here's how to download and install the JDK, JVM Flight Recorder and Java Mission Control.
 ---
 
-
+# JDK Mission Control Download and Installation
 <div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AHT4ZvOe6a4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E3gxhuATmHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-# Installing Java Mission Control
+This tutorial provides plenty of examples and material to help you learn JDK Mission Control (7+).
 
-To do the exercises in this tutorial, you must first install Eclipse and Mission Control.
+## Flight Recorder & Mission Control Preparations
+Since it is not practical to pre-package everything required to run the material here at GitHub, there are some preparations required before starting the Tutorial.
+
+### Setting up the JDK
+You will need to have a JDK 11 or later to do this tutorial. Here's a quick tutorial on how to [install AdoptOpenJDK](https://www.theserverside.com/tutorial/How-to-install-the-JDK-on-Windows-and-setup-JAVA_HOME).
+
+You will need to ensure that `java` for your JDK is on your path, and you should also make sure that your [JAVA_HOME](https://www.theserverside.com/tutorial/How-to-install-the-JDK-on-Windows-and-setup-JAVA_HOME) variable is set to the parent folder of the `bin` folder containing your `java` binary.
+
+### Getting the stand alone version of JMC
+The open source version of JMC has not been released yet, but early access builds can be downloaded from here:
+http://jdk.java.net/jmc
+
+### AdoptOpenJDK and Mission Control
+
+Here's a link to get the AdoptOpenJDK Java Mission Control and JDK distribution:
+https://adoptopenjdk.net/jmc.html
+
+## Installing JDK Mission Control
+
+To do the exercises in this tutorial, you must first install [Eclipse and Java Mission Control](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Java-Mission-Control-8-Eclipse-plugin-Install).
 
 ```
 https://github.com/thegreystone/jmc-tutorial
@@ -19,6 +38,10 @@ https://github.com/thegreystone/jmc-tutorial
 
 In this repository you will also find the files and code required to complete the
 tutorial.
+
+
+
+
 
 ## Starting JDK Mission Control
 
@@ -58,11 +81,6 @@ on the network.
 To the bottom left is the Properties view, showing properties for anything selected in
 the editor.
 
-
-<div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AHT4ZvOe6a4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 Behind the Properties view is the Results view, which shows the results from the
 automated analysis relevant to the currently opened page in the editor.
 
@@ -79,3 +97,4 @@ Running Mission Control.
 
 Since we will be running the tutorial from within Eclipse, please shut down (⌘
 +Q on Mac, alt+F4 on Windows) the stand-alone version of JDK Mission Control.
+

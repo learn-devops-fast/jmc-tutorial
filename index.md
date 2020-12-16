@@ -1,95 +1,237 @@
 ---
 layout: default
-title: Java Mission Control
----
----
-layout: default
 author: Cameron McKenzie
-title: Java Mission Control Tutorial
-blurb: Learn how to profile your JVM and fix Java performance issues with Java Mission Control and Flight Recorder.
+title: Java Mission Control Tutorial and Training Course
+blurb: Learn Java's JDK Mission Control and the JVM Flight Recorder with this free JMC training course and comprehensive JRF tutorial
 ---
+<div class="row">
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Free Training Course</div>
+         <picture>
+            <source srcset="/assets/shut-up-meme.jpg" media="(min-width: 1200px)">
+            <source srcset="/assets/shut-up-meme.jpg" media="(min-width: 992px)">
+            <source srcset="/assets/shut-up-meme.jpg" media="(min-width: 768px)">
+            <source srcset="/assets/shut-up-meme.jpg" media="(min-width: 576px)">
+            <img src="/assets/shut-up-meme.jpg" class="img-fluid" alt="Course Outline">
+         </picture>
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Here's the Java Mission Control training course outline and a link to all of the exercises.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/Free_Java_Mission_Control_Training_Course.html" class="text-center btn btn-outline-primary btn-sm">Course Outline</a></p>
+         </div>
+      </div>
+   </div>
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab 1: Getting Started</div>
+         <picture>
+            <source srcset="/assets/get-started-mission-control.jpg" media="(min-width: 1200px)">
+            <source srcset="/assets/get-started-mission-control.jpg" media="(min-width: 992px)">
+            <source srcset="/assets/get-started-mission-control.jpg" media="(min-width: 768px)">
+            <source srcset="/assets/get-started-mission-control.jpg" media="(min-width: 576px)">
+            <img src="/assets//assets/get-started-mission-control.jpg" class="img-fluid" alt="Get Started Java Mission Control">
+         </picture>
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Get the software you need to run JMC and JFR.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/download_install_jdk_mission_control_recorder.html" class="text-center btn btn-outline-primary btn-sm">Install JMC</a></p>
+         </div>
+      </div>
+   </div>
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab 2: The Flight Recorder</div>
+         <picture>
+            <source srcset="/assets/java-flight-recorder-example.jpg" media="(min-width: 1200px)">
+            <source srcset="/assets/java-flight-recorder-example.jpg" media="(min-width: 992px)">
+            <source srcset="/assets/java-flight-recorder-example.jpg" media="(min-width: 768px)">
+            <source srcset="/assets/java-flight-recorder-example.jpg" media="(min-width: 576px)">
+            <img src="/assets/java-flight-recorder-example.jpg" class="img-fluid" alt="JDK JVM Flight Recorder Example">
+         </picture>
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Learn how to create Java Flight Recorder files and explore the results.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/introduction_java_mission_control_eclipse.html" class="text-center btn btn-outline-primary btn-sm">Flight Recorder</a></p>
+         </div>
+      </div>
+   </div>
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab 2b: Performance Troubleshooting</div>
+         <img src="/assets/flight-recorder-performance-profile.jpg" class="card-img-top" alt="pass UiPath Associate Exam">
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Identify poor Java programming choices that hurt performance. </p>
+            <p class="text-center mt-auto"><a href="/cert-brain-dumps-uipath.html" class="text-center btn btn-outline-primary btn-sm">Performance</a></p>
+         </div>
+      </div>
+   </div>
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab 3: Java Latency Problems</div>
+            <img src="/assets/log-synchronization-mission-control.jpg" class="img-fluid" alt="Java latency issues">
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">See how bad log method syncs lead to low latency Java problems.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/Low_Latency_Java_Performance_JMC_JFR.html" class="text-center btn btn-outline-primary btn-sm">Java Latency</a></p>
+         </div>
+      </div>
+   </div>
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab 4: Garbage Collection</div>
+         <picture>
+            <source srcset="/assets/garbage-collection-flight-recorder.jpg" media="(min-width: 1200px)">
+            <source srcset="/assets/garbage-collection-flight-recorder.jpg" media="(min-width: 992px)">
+            <source srcset="/assets/garbage-collection-flight-recorder.jpg" media="(min-width: 768px)">
+            <source srcset="/assets/garbage-collection-flight-recorder.jpg" media="(min-width: 576px)">
+            <img src="/assets/garbage-collection-flight-recorder.jpg" class="img-fluid" alt="Java Garbage Collection">
+         </picture>
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Here's how to learn about how Java GC impacts performance.</p>
+            <p class="text-center mt-auto"><a href="2020/12/10/Profile-GC-Garbage-JFC-JMC-Mission-Flight.html" class="text-center btn btn-outline-primary btn-sm">Java GC</a></p>
+         </div>
+      </div>
+   </div>
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab 5: Java Memory Leaks</div>
+         <picture>
+            <source srcset="/assets/java-memory-leaks-jdk.jpg" media="(min-width: 1200px)">
+            <source srcset="/assets/java-memory-leaks-jdk.jpg" media="(min-width: 992px)">
+            <source srcset="/assets/java-memory-leaks-jdk.jpg" media="(min-width: 768px)">
+            <source srcset="/assets/java-memory-leaks-jdk.jpg" media="(min-width: 576px)">
+            <img src="/assets/java-memory-leaks-jdk.jpg" class="img-fluid" alt="Java Memory Leaks">
+         </picture>
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Learn how to identify and fix a memory leak in your JVM.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/JVM_Memory_Leaks_Mission_Recorder_Profile.html" class="text-center btn btn-outline-primary btn-sm">Memory Leaks</a></p>
+         </div>
+      </div>
+   </div>
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab 6: WebLogic, JMC and JFR</div>
+         <picture>
+            <source srcset="/assets/weblogic-custom-flight-recorder-events-mission.jpg" media="(min-width: 1200px)">
+            <source srcset="/assets/weblogic-custom-flight-recorder-events-mission.jpg" media="(min-width: 992px)">
+            <source srcset="/assets/weblogic-custom-flight-recorder-events-mission.jpg" media="(min-width: 768px)">
+            <source srcset="/assets/weblogic-custom-flight-recorder-events-mission.jpg" media="(min-width: 576px)">
+            <img src="/assets/weblogic-custom-flight-recorder-events-mission.jpg" class="img-fluid" alt="Profile WebLogic in Java Mission Control">
+         </picture>
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Explore how custom JFR events in WebLogic provide extra profiling data.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/WebLogic_JDK_Profiler_Flight_Recorder_Mission.html" class="text-center btn btn-outline-primary btn-sm">WebLogic</a></p>
+         </div>
+      </div>
+   </div>
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab 7: JavaFX Profiling</div>
+         <picture>
+            <source srcset="/assets/JavaFX-flight-recorder-profile.jpg" media="(min-width: 1200px)">
+            <source srcset="/assets/JavaFX-flight-recorder-profile.jpg" media="(min-width: 992px)">
+            <source srcset="/assets/JavaFX-flight-recorder-profile.jpg" media="(min-width: 768px)">
+            <source srcset="/assets/JavaFX-flight-recorder-profile.jpg" media="(min-width: 576px)">
+            <img src="/assets/JavaFX-flight-recorder-profile.jpg" class="img-fluid" alt="JavaFX Flight Recorder Profile">
+         </picture>
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Learn how to profile JavaFX applications with Mission Control and Flight Recorder.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/Profile_JavaFX_Performance_Flight_Recorder_Mission.html" class="text-center btn btn-outline-primary btn-sm">JavaFX and JFR</a></p>
+         </div>
+      </div>
+   </div>
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab 8: Exception Analysis</div>
+         <picture>
+            <source srcset="/assets/thrown-exceptions-mission-control.jpg" media="(min-width: 1200px)">
+            <source srcset="/assets/thrown-exceptions-mission-control.jpg" media="(min-width: 992px)">
+            <source srcset="/assets/thrown-exceptions-mission-control.jpg" media="(min-width: 768px)">
+            <source srcset="/assets/thrown-exceptions-mission-control.jpg" media="(min-width: 576px)">
+            <img src="/assets/thrown-exceptions-mission-control.jpg" class="img-fluid" alt="Profile Exceptions">
+         </picture>
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Here's how to analyse thrown Exceptions in Java Mission Control. </p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/Exception_Monitoring_Flight_Recorder_Mission.html" class="text-center btn btn-outline-primary btn-sm">Exceptions</a></p>
+         </div>
+      </div>
+   </div>
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab 9: Custom JFR Events</div>
+         <picture>
+            <source srcset="/assets/jfr-custom-events-flight-recorder.jpg" media="(min-width: 1200px)">
+            <source srcset="/assets/jfr-custom-events-flight-recorder.jpg" media="(min-width: 992px)">
+            <source srcset="/assets/jfr-custom-events-flight-recorder.jpg" media="(min-width: 768px)">
+            <source srcset="/assets/jfr-custom-events-flight-recorder.jpg" media="(min-width: 576px)">
+            <img src="/assets/jfr-custom-events-flight-recorder.jpg" class="img-fluid" alt="Custom Events Flight Recorder">
+         </picture>
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Here's how to create custom Java Flight Recorder events.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/2020-12-10-Custom_Flight_Recorder_Events_Mission_Control.html" class="text-center btn btn-outline-primary btn-sm">Custom Events</a></p>
+         </div>
+      </div>
+   </div>
+   
+   
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab: Custom JMC Rules</div>
+         <img src="/assets/custom-rules-flight-recorder.jpg" class="card-img-top" alt="uipath tutorials">
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">How to create custom rules for Flight Recorder and Mission Control.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/Custom_Rules_Mission_Control_JDK_Java_JVM.html" class="text-center btn btn-outline-primary btn-sm">Custom Rules</a></p>
+         </div>
+      </div>
+   </div>
+   
+   
+   
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Part: Pages & Filters</div>
+         <img src="/assets/mission-control-page-filters.jpg" class="card-img-top" alt="uipath cert prep">
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Use filters to create custom pages to view Flight Recorder data in Mission Control.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/Custom_Pages_Filters_Mission_Control.html" class="text-center btn btn-outline-primary btn-sm">Pages & Filters</a></p>
+         </div>
+      </div>
+   </div>
+   
+   
+   
+   
+   
+   <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab: MBeans Browser</div>
+         <img src="/assets/jmx-mbeans-browser-server.jpg" class="card-img-top" alt="JMX MBeans">
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Use the Mission Control Management Console to browse available MBeans.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/MBeans_Management_Console_Mission_Control.html" class="text-center btn btn-outline-primary btn-sm">MBeans Browser</a></p>
+         </div>
+      </div>
+   </div>
+   
+      <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab: Heap Waste Analysis</div>
+         <img src="/assets/JVM_Heap_Waste_Analysis_Tool.jpg" class="card-img-top" alt="uipath tutorials">
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Explore Mission Control's new Heap Waste Analysis Tool.</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/Java_Heap_Waste_Analysis_JVM_JMC_JFR.html" class="text-center btn btn-outline-primary btn-sm">Heap Waste</a></p>
+         </div>
+      </div>
+   </div>
+   
+      <div class=" col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2  d-flex align-items-stretch">
+      <div class="card" >
+         <div class="card-header">Lab: JCMD</div>
+         <img src="/assets/JCMD-Java-Diagnostic-Command.jpg" class="card-img-top" alt="uipath tutorials">
+         <div class="card-body  d-flex flex-column">
+            <p class="card-text">Learn about the JDK's Diagnostic Command (JCMD).</p>
+            <p class="text-center mt-auto"><a href="/2020/12/10/JCMD_Java_Diagnostic_Command_JDK_JVM_JMC_JFR.html" class="text-center btn btn-outline-primary btn-sm">JCMD</a></p>
+         </div>
+      </div>
+   </div>
+   
+   
 
-
-# JDK Mission Control Tutorial
-
-This tutorial provides plenty of examples and material to help you learn JDK Mission Control (7+).
-
-## Preparations
-Since it is not practical to pre-package everything required to run the material here at GitHub, there are some preparations required before starting the Tutorial.
-
-### Setting up the JDK
-You will need to have a JDK 11 or later to do this tutorial. You can either use the [Oracle JDK](http://java.oracle.com) or any OpenJDK build, for example the one provided by [Oracle](http://jdk.java.net/11/).
-
-You will need to ensure that `java` for your JDK is on your path, and you should also make sure that your JAVA_HOME variable is set to the parent folder of the `bin` folder containing your `java` binary.
-
-### Getting the stand alone version of JMC
-The open source version of JMC has not been released yet, but early access builds can be downloaded from here:
-http://jdk.java.net/jmc/
-
-### Setting up Eclipse
-The tutorial will be easier to run if you have an Eclipse installed. You will need an Eclipse Oxygen 4.8.0 or later. You will also need to add some VM arguments.
-
-For example:
-
-```ini
--vmargs
--Djdk.attach.allowAttachSelf=true
---add-exports=java.xml/com.sun.org.apache.xerces.internal.parsers=ALL-UNNAMED
---add-exports=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED
---add-exports=java.management/sun.management=ALL-UNNAMED
---add-exports=java.management/sun.management.counter.perf=ALL-UNNAMED
---add-exports=jdk.management.agent/jdk.internal.agent=ALL-UNNAMED
---add-exports=jdk.attach/sun.tools.attach=ALL-UNNAMED
---add-opens=java.base/java.net=ALL-UNNAMED
---add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
-```
-
-Depending on your platform you will also need to add one final export.
-
-If running on Windows, also add:
-
-```ini
---add-exports=java.desktop/sun.awt.windows=ALL-UNNAMED
-```
-
-If running on Mac OS, also add:
-
-```ini
---add-exports=java.desktop/sun.lwawt.macosx=ALL-UNNAMED
-```
-
-If running on Linux, also add:
-
-```ini
---add-exports=java.desktop/sun.awt.X11=ALL-UNNAMED
-```
-
-You may also want to ensure that your newly setup JDK is being used for running Eclipse. This can be enforced by using the -vm option in the eclipse.ini file. Don't forget that the -vmargs option must be last in the file. For example:
-
-```ini
--vm
-/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/bin
--vmargs
--Djdk.attach.allowAttachSelf=true
-...
-```
-
-#### Adding the Eclipse plug-ins
-
-Next you will want to add the JMC plug-ins. Once JMC is released, this will be as simple as going to the Eclipse market place. For now, you will need to build them yourself. Install mercurial (if you don't already have it) and run the following command in the folder you wish to clone the JMC source:
-
-```bash
-hg clone http://hg.openjdk.java.net/jmc/jmc/
-```
-
-Follow the instructions in the README.md found in the root of the JMC repository on how to create and access the update sites for Eclipse.
-
-#### Importing the projects
-To import the projects into Eclipse, create a new Workspace and simply import all the projects available in the projects folder.
-
-## Running the Tutorial
-There is a PDF in the root of this project explaining in detail how to run the JMC labs. If running the labs from within Eclipse, first ensure that you have set up an Eclipse properly, added the plug-in version of JMC, and imported the projects.
-
-## About
-This tutorial is for learning how to use JDK Mission Contol. It is provided under GPLv3 as is. If you find a problem, please open a ticket or feel free to provide a pull request.
-
+</div>

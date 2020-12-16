@@ -9,7 +9,7 @@ blurb: When you compare a Java LinkedList vs HashSet or other collection class w
 
 
 <a id="markdown-exercise-2b--hot-methods" name="exercise-2b--hot-methods"></a>
-### LinkedList vs HashSet Performance with Java Flight Recorder
+# LinkedList vs HashSet Performance with Java Flight Recorder
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6zTPiuAsMQU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

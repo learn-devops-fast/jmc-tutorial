@@ -1,3 +1,16 @@
+---
+layout: default
+author: Cameron McKenzie
+title: VisualVM vs Mission Control
+blurb: A quick description of how VisualVM differs from Java Mission Control
+---
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E3gxhuATmHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+# VisualVM vs Mission Control
+
 The main performance difference in the method profiling is that MC/JFR uses sampling, and only samples a few threads per sampling interval. It uses a similar approach to AsyncGetCallTrace (see for example http://psy-lob-saw.blogspot.com/2016/06/the-pros-and-cons-of-agct.html)
 
 Since I work with MC/JFR, I'm not as familiar with how VisualVM does it's sampling profiling, but I believe it's not using the same method.
